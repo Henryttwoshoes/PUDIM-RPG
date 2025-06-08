@@ -8,7 +8,10 @@
     <style>
 
         body {
-            font-family: 'Helvetica';
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: black url('imagens/fundos/fundo universo branco.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
         header{
             background-color: rgb(236, 236, 236);
@@ -78,6 +81,41 @@ a:hover::after{
 }
 
 
+
+
+    section#sinopse {
+    background-color: #dfdfdf;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto 20vw;
+    }
+
+    section#sinopse:hover{
+        background-color: #ffffff;
+        transition-duration: 0.5s;
+    }
+    section#sinopse:not(:hover){
+        background-color: #dfdfdf;
+        transition-duration: 0.5s;
+    }
+
+    section#sinopse p{
+    padding-top: 5vh; 
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 2em;
+    }
+    
+    section#sinopse h2{ 
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 3em;
+    text-decoration: underline;
+    }
+
+
+
+
     @media (max-width: 900px) {
     header {
         padding: 0 2vw; /* padding menor e proporcional */
@@ -101,10 +139,23 @@ a:hover::after{
         max-height: 100vh; /* ajuste este valor conforme desejar */
         margin: 0 auto;
         object-fit: contain; /* garante que a imagem não distorça */
+        border: 1.5px solid black
     }
     main img#desktop {
         display: none;
         width: 0vw;
+    }
+    section p{
+    padding-top: 5vh; 
+    text-align: center;
+    margin: 0 5vw;
+    font-size: 1em;
+    }
+    section#sinopse {
+    background-color: #dfdfdf;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto 5vw;
     }
 }
     </style>
@@ -122,5 +173,11 @@ a:hover::after{
         <img src="imagens/André e o mundo branco editado.png" alt="" id="desktop">
         <img src="imagens/Mundo Branco banner celular.png" alt="" id="celular">
     </main>
+    <section id="sinopse">
+        <h2>SINOPSE</h2>
+        <p>Em um universo coberto por branco e outros tipos de matéria monocromáticas, André, um viajante do multiverso, adentra uma parte desse cenário bizarro. Ele se encontra em uma porção de terra colonizada por pequenas criaturas trabalhadoras e de chapéu vermelho, <strong>gnomos</strong>. Esse mundo guarda muitos mistérios, mas será que André irá conseguir desvendá-los e ajudar os habitantes deste mundo? Só o tempo dirá. <br>
+        <p>Muitos são os mistérios escondidos no Universo Branco, mas algumas respostas sõa muito mais profundas e complexas do que uma simples ambição por poder.</p></p>
+        
+    </section>
 </body>
 </html>

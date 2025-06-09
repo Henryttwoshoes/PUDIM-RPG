@@ -113,7 +113,44 @@ a:hover::after{
     text-decoration: underline;
     }
 
+    section#sobre {
+    display: flex;
+    background-color: #d8d8d8;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto;
+    flex-flow: row nowrap;
+    padding: 10vh 20vw;
+    }
+    div#text p{
+    text-indent: 40px;
+    flex: 0 1 240px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+    }
+    
+    div#media {
+        flex: 0 0 360px;
+        margin: auto;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 560px;
+        margin-bottom: 100px;
+    }
 
+    div.paralelo{
+        display: flex;
+    }
+    div#text {
+        flex-direction: column;
+    }
+    div#media{
+        flex: column nowrap;
+    }
 
 
     @media (max-width: 900px) {
@@ -145,7 +182,7 @@ a:hover::after{
         display: none;
         width: 0vw;
     }
-    section p{
+    section#sinopse > p{
     padding-top: 5vh; 
     text-align: center;
     margin: 0 5vw;
@@ -156,6 +193,44 @@ a:hover::after{
     padding-top: 5vh;
     padding-bottom: 5vh;
     margin: auto 5vw;
+    }
+
+    section#sobre {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+    div#media {
+        flex: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+
+    div#text p{
+    flex: 0 1 180px;
+    padding-top: 5vh; 
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+    }
+
+    div#text {
+        flex-direction: column;
+    }
+
+    div#media {
+        flex: 0 0 230px;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 200px;
     }
 }
     </style>
@@ -177,7 +252,15 @@ a:hover::after{
         <h2>SINOPSE</h2>
         <p>Em um universo coberto por branco e outros tipos de matéria monocromáticas, André, um viajante do multiverso, adentra uma parte desse cenário bizarro. Ele se encontra em uma porção de terra colonizada por pequenas criaturas trabalhadoras e de chapéu vermelho, <strong>gnomos</strong>. Esse mundo guarda muitos mistérios, mas será que André irá conseguir desvendá-los e ajudar os habitantes deste mundo? Só o tempo dirá. <br>
         <p>Muitos são os mistérios escondidos no Universo Branco, mas algumas respostas sõa muito mais profundas e complexas do que uma simples ambição por poder.</p></p>
-        
+    </section>
+    <section id="sobre">
+        <div id="text" class="paralelo">
+        <p>"<strong>André e o Universo Branco</strong>" foi uma one-shot - <i>uma história de RPG com duração de uma sessão</i> - transmitida no canal da Twitch e do Youtube do André no dia <strong>17 de Janeiro de 2025</strong>. O episódio foi a primeira história de RPG oficial do Pudimverso, inaugurando um novo tipo de conteúdo nas streams do Cazum8.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum ullam iusto iste et? Nesciunt, consequuntur? Molestias tempora architecto qui, voluptatem, veniam impedit illum quod, expedita tenetur esse neque? Obcaecati?</p>
+        </div>
+        <div id="media" class="paralelo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1lI-s615ZvQ?si=QZc-xN_xb-1CyhXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
 </body>
 </html>

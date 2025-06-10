@@ -84,7 +84,7 @@ a:hover::after{
 
 
     section#sinopse {
-    background-color: #dfdfdf;
+    background-color: #dfdfdf83;
     padding-top: 5vh;
     padding-bottom: 10vh;
     margin: auto 20vw;
@@ -95,7 +95,7 @@ a:hover::after{
         transition-duration: 0.5s;
     }
     section#sinopse:not(:hover){
-        background-color: #dfdfdf;
+        background-color: #dfdfdf83;
         transition-duration: 0.5s;
     }
 
@@ -106,7 +106,8 @@ a:hover::after{
     font-size: 2em;
     }
     
-    section#sinopse h2{ 
+    section#sinopse h2{
+    color: #FF9C00;
     text-align: center;
     margin: 0 10vw;
     font-size: 3em;
@@ -152,6 +153,46 @@ a:hover::after{
         flex: column nowrap;
     }
 
+    section#elenco {
+
+        background-color: #ffffff;
+
+
+
+        padding: 10vh 3vw;
+
+        margin: auto 20vw;
+    }
+
+    div#figuras{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #elenco > h2{
+        display: block;
+        font-size: 3em;
+        text-decoration: underline;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        
+        max-width: 300px;
+        max-height: 400px;
+    }
+    figure {
+        margin: auto 5vw;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1.3em;
+    }
 
     @media (max-width: 900px) {
     header {
@@ -232,6 +273,46 @@ a:hover::after{
         margin: auto;
         max-width: 200px;
     }
+
+    section#elenco {
+        border: 1px solid black;
+
+        background-color: #ffffff;
+
+        padding: 10vh 3vw;
+
+        margin: auto 5vw;
+    }
+    div#figuras{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #elenco > h2{
+        display: block;
+        font-size: 2em;
+        text-decoration: underline;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        margin: auto    ;  
+        max-width: 100px;
+        max-height: 200px;
+    }
+    figure {
+        margin: auto;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1em;
+    }
+    
 }
     </style>
 </head>
@@ -256,11 +337,27 @@ a:hover::after{
     <section id="sobre">
         <div id="text" class="paralelo">
         <p>"<strong>André e o Universo Branco</strong>" foi uma one-shot - <i>uma história de RPG com duração de uma sessão</i> - transmitida no canal da Twitch e do Youtube do André no dia <strong>17 de Janeiro de 2025</strong>. O episódio foi a primeira história de RPG oficial do Pudimverso, inaugurando um novo tipo de conteúdo nas streams do Cazum8.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum ullam iusto iste et? Nesciunt, consequuntur? Molestias tempora architecto qui, voluptatem, veniam impedit illum quod, expedita tenetur esse neque? Obcaecati?</p>
+        <p>A gravação do episódio está disponível no canal do Cazum Infinito, e você pode acessá-la diretamente pelo anexo de vídeo à direita deste texto.</p>
         </div>
         <div id="media" class="paralelo">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/1lI-s615ZvQ?si=QZc-xN_xb-1CyhXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+    </section>
+    <section id="elenco">
+        <h2>ELENCO</h2>
+        <div id="figuras">
+        <figure>
+            <img src="imagens/Universo Branco/Tokens/Henry narrador.png" alt="">
+            <figcaption><strong>Henryttwoshoes</strong></figcaption>
+            <figcaption>- O Narrador dessa história -</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Universo Branco/Tokens/André.png" alt="">
+            <figcaption><strong>André, o Viajante do Multiverso</strong></figcaption>
+            <figcaption>- Interpretado por Cazum8 -</figcaption>
+        </figure>
+        </div>
+        <p></p>
     </section>
 </body>
 </html>

@@ -115,13 +115,27 @@ a:hover::after{
     }
 
     section#sobre {
-    display: flex;
     background-color: #d8d8d8;
     padding-top: 5vh;
     padding-bottom: 10vh;
     margin: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    }
+
+    section#sobre > h2 {
+        color: #FF9C00;
+        font-size: 3em;
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 4vw;
+    }
+
+    div#container {
+        display: flex;
     flex-flow: row nowrap;
-    padding: 10vh 20vw;
     }
     div#text p{
     text-indent: 40px;
@@ -173,6 +187,7 @@ a:hover::after{
         display: block;
         font-size: 3em;
         text-decoration: underline;
+        color: #FF9C00;
 
         padding-bottom: 5vh;
         text-align: center;
@@ -236,7 +251,7 @@ a:hover::after{
     margin: auto 5vw;
     }
 
-    section#sobre {
+    div#container {
         flex-direction: column;
         padding: 0 5vw;
     }
@@ -256,7 +271,9 @@ a:hover::after{
     text-align: center;
     font-size: 1.2em;
     color: rgb(0, 0, 0);
-    margin-right: 50px;
+    margin: auto;
+    text-indent: 0px;
+    padding-bottom: 50px;
     }
 
     div#text {
@@ -271,7 +288,8 @@ a:hover::after{
     div#media iframe {
         display: flex;
         margin: auto;
-        max-width: 200px;
+        max-width: 100%;
+        text-align: center;
     }
 
     section#elenco {
@@ -335,6 +353,8 @@ a:hover::after{
         <p>Muitos são os mistérios escondidos no Universo Branco, mas algumas respostas são muito mais profundas e complexas do que uma simples ambição por poder.</p></p>
     </section>
     <section id="sobre">
+        <h2>SOBRE</h2>
+        <div id="container">
         <div id="text" class="paralelo">
         <p>"<strong>André e o Universo Branco</strong>" foi uma one-shot - <i>uma história de RPG com duração de uma sessão</i> - transmitida no canal da Twitch e do Youtube do André no dia <strong>17 de Janeiro de 2025</strong>. O episódio foi a primeira história de RPG oficial do Pudimverso, inaugurando um novo tipo de conteúdo nas streams do Cazum8.</p>
         <p>A gravação do episódio está disponível no canal do Cazum Infinito, e você pode acessá-la diretamente pelo anexo de vídeo à direita deste texto.</p>
@@ -342,6 +362,7 @@ a:hover::after{
         <div id="media" class="paralelo">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/1lI-s615ZvQ?si=QZc-xN_xb-1CyhXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+    </div>
     </section>
     <section id="elenco">
         <h2>ELENCO</h2>

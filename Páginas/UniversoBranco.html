@@ -52,7 +52,7 @@
     header > nav > a::after{
     content: '';
     background-color: #FF9C00;
-    height: 5px;
+    height: 0px;
     width: 0;
     position: absolute;
     bottom: 0;
@@ -61,6 +61,7 @@
 }
 
 a:hover::after{
+    height: 5px;
     width: 100%;
 }
 
@@ -178,12 +179,21 @@ a:hover::after{
         margin: auto 20vw;
     }
 
+    section#creditos {
+        background-color: #d8d8d8;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        margin: auto;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
     div#figuras{
         display: flex;
         flex-flow: row wrap;
     }
 
-    #elenco > h2{
+    #elenco > h2, section#créditos > h2{
         display: block;
         font-size: 3em;
         text-decoration: underline;
@@ -373,9 +383,9 @@ a:hover::after{
     <header>
         <img src="imagens/Logo Universo Branco.png" alt="">
         <nav>
-            <a href="#">Teste</a>
-            <a href="#">Teste</a>
-            <a href="#">Teste</a>
+            <a href="#">Sinopse</a>
+            <a href="#">Sobre</a>
+            <a href="#">Elenco</a>
         </nav>
     </header>
     <main>
@@ -388,7 +398,7 @@ a:hover::after{
         <p>Muitos são os mistérios escondidos no Universo Branco, mas algumas respostas são muito mais profundas e complexas do que uma simples ambição por poder.</p></p>
     </section>
     <section id="sobre">
-        <h2>SOBRE</h2>
+        <h2>SOBRE/ASSISTIR</h2>
         <div id="container">
         <div id="text" class="paralelo">
         <p>"<strong>André e o Universo Branco</strong>" foi uma one-shot - <i>uma história de RPG com duração de uma sessão</i> - transmitida no canal da Twitch e do Youtube do André no dia <strong>17 de Janeiro de 2025</strong>. O episódio foi a primeira história de RPG oficial do Pudimverso, inaugurando um novo tipo de conteúdo nas streams do Cazum8.</p>
@@ -405,15 +415,29 @@ a:hover::after{
         <figure>
             <img src="imagens/Universo Branco/Tokens/Henry narrador.png" alt="">
             <figcaption><strong>Henryttwoshoes</strong></figcaption>
-            <figcaption>- O Narrador dessa história -</figcaption>
+            <figcaption>O Narrador dessa história</figcaption>
         </figure>
         <figure>
             <img src="imagens/Universo Branco/Tokens/André.png" alt="">
             <figcaption><strong>André, o Viajante do Multiverso</strong></figcaption>
-            <figcaption>- Interpretado por Cazum8 -</figcaption>
+            <figcaption>Interpretado por Cazum8</figcaption>
         </figure>
         </div>
-        <p></p>
+        <h2 style="padding-top: 5vh;">Sistema usado</h2>
+        <div id="sistema">
+            <figure>
+            <img src="imagens/Universo Branco/Ordem_Paranormal_RPG-Livro.webp" alt="">
+            <figcaption><strong>Ordem Paranormal RPG</strong></figcaption>
+            <figcaption style="color: rgb(133, 133, 133);"><i>Open Game License</i></figcaption>
+            <figcaption style="margin: auto 8vw;">regras usadas como base, o cenário foi substituído e algumas regras foram adaptadas ou descartadas</figcaption>
+        </figure>
+        </div>
+        
     </section>
+    <section id="creditos">
+            <h2>Créditos</h2>
+            <p>- Site desenvolvido por Henryttwoshoes</p>
+
+        </section>
 </body>
 </html>

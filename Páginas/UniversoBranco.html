@@ -219,6 +219,57 @@ a:hover::after{
         font-size: 1.3em;
     }
 
+    section#creditos > h2{
+        
+        text-align: center;
+        font-size: 3em;
+    }
+    section#creditos > h3{
+        padding: 1vh 0;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    section#creditos > p {
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    section#creditos > img{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 10%;
+    }
+
+    div#redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+    }
+    div#redes > figure > a > img{
+        width: 60px;
+        max-width: 100%;
+    }
+
+    div#redes > figure {
+        flex: 0 1 50px;
+        margin: 0;
+        align-items: center;
+
+    }
+
+    footer {
+        background-color: #FF9C00;
+        color: white;
+        text-align: center;
+        margin: auto;
+        display: block;
+        font-size: 1.3em;
+    }
+
     @media (max-width: 1200px) {
         
     header {
@@ -262,6 +313,11 @@ a:hover::after{
     padding-top: 5vh;
     padding-bottom: 5vh;
     margin: auto 5vw;
+    }
+    section#sobre > h2 {
+        font-size: 1.6em;
+        margin: auto;
+        display: block;
     }
 
     div#container {
@@ -343,6 +399,13 @@ a:hover::after{
         text-align: center;
         font-size: 1em;
     }
+    div#redes {
+        flex-direction: column;
+
+    }
+    div#redes > p {
+        font-size: 1em;
+    }
     
 }
 
@@ -364,19 +427,18 @@ a:hover::after{
 } 
     }
 
-    @media (max-width: 500px){
-        header {
-            align-items: center;
-        }
-
-
-        header > nav {
-            align-self: center;
-            justify-content: center;
-            width: 100%;
-            margin: 0;
-        }
+    @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
     }
+    header > nav {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}
     </style>
 </head>
 <body>
@@ -429,15 +491,53 @@ a:hover::after{
             <img src="imagens/Universo Branco/Ordem_Paranormal_RPG-Livro.webp" alt="">
             <figcaption><strong>Ordem Paranormal RPG</strong></figcaption>
             <figcaption style="color: rgb(133, 133, 133);"><i>Open Game License</i></figcaption>
-            <figcaption style="margin: auto 8vw;">regras usadas como base, o cenário foi substituído e algumas regras foram adaptadas ou descartadas</figcaption>
+            <figcaption style="margin: auto 8vw;">regras usadas como base, o cenário foi substituído e algumas mecânicas foram adaptadas ou descartadas</figcaption>
         </figure>
         </div>
         
     </section>
     <section id="creditos">
             <h2>Créditos</h2>
-            <p>- Site desenvolvido por Henryttwoshoes</p>
+            <p>- Transmissão do episódio feita por Cazum8(André) -</p>
+            <p>- One-shot escrita e planejada por Henryttwoshoes -</p>
+            <br>
+            <p>Este site e seus conteúdos relacionados fazem parte do conglomerado de produção digital do Pudimverso.</p>
 
+            <h3>Links para mais novidades</h3>
+            <p><a href="https://discord.gg/yK25rv2E56" target="_blank">Discord do Pudimverso</a></p>
+            <img src="imagens/Universo Branco/discord.png" alt="">
+            <h3>Redes do Cazum8</h3>
+            <div id="redes">        
+            <figure>
+                <a href="https://www.youtube.com/@cazum8" target="_blank">
+                    <img src="imagens/Universo Branco/youtube logo.png" alt="">
+                    <figcaption>YouTube</figcaption>
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="https://www.twitch.tv/cazum8videos" target="_blank">
+                    <img src="imagens/Universo Branco/twitch--v2.png" alt="">
+                    <figcaption>Twitch</figcaption>
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="https://www.instagram.com/cazum8oficial/   " target="_blank">
+                    <img src="imagens/Universo Branco/Instagram_icon.png.webp" alt="">
+                    <figcaption>Instagram</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="https://x.com/Cazum8Videos" target="_blank">
+                    <img src="imagens/Universo Branco/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" alt="">
+                    <figcaption>X</figcaption>
+                </a>
+            </figure>
+
+            </div>
         </section>
+        <footer><div></div>Site desenvolvido por Henryttwoshoes</footer>
 </body>
 </html>

@@ -14,14 +14,14 @@
             background-attachment: fixed;
         }
         header{
-            background-color: rgb(236, 236, 236);
+            background-color: #FFFFFF;
             color: white;
             padding: 0 10px;
 
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: flex-end;
+            justify-content: center;
+            align-items: center;
             align-self: auto;
         }
         header > img {
@@ -29,16 +29,16 @@
         }
 
         header > nav {
-        margin: 0;
-        justify-content: flex-end;
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-end;
-        }
+        align-items: center;
+        justify-content: center;
+}
+        
 
         header > nav > a {
-        background-color: rgb(236, 236, 236);
-        color: #FF9C00;
+        background-color: #FFFFFF;
+        color: #F27052;
         padding: 10px;
         margin: 0 5px;
         text-decoration: none;
@@ -51,7 +51,7 @@
 
     header > nav > a::after{
     content: '';
-    background-color: #FF9C00;
+    background-color: #F27052;
     height: 0px;
     width: 100%;
     position: absolute;
@@ -81,11 +81,11 @@ a:hover::after{
 
 
     section#sinopse {
-    background-color: #dfdfdf83;
+    background-color: #ffffff83;
     padding-top: 5vh;
-    padding-bottom: 10vh;
+    padding-bottom: 2vh;
     margin: auto 20vw;
-    height: 90vh;
+    height: 60vh;
     
     }
 
@@ -106,7 +106,7 @@ a:hover::after{
     }
     
     section#sinopse h2{
-    color: #FF9C00;
+    color: #193559;
     text-align: center;
     margin: 0 10vw;
     font-size: 3em;
@@ -114,7 +114,7 @@ a:hover::after{
     }
 
     section#sobre {
-    background-color: #d8d8d8;
+    background-color: #FFFFFF;
     padding-top: 5vh;
     padding-bottom: 10vh;
     margin: auto;
@@ -123,26 +123,26 @@ a:hover::after{
     }
 
     section#sobre > h2 {
-        color: #FF9C00;
+        color: #193559;
         font-size: 3em;
         display: block;
         margin: auto;
         text-align: center;
         text-decoration: underline;
-        margin-bottom: 4vw;
+        margin-bottom: 2vw;
     }
 
     div#container {
         display: flex;
-    flex-flow: row nowrap;
+        flex-flow: column nowrap;
     }
     div#text p{
     text-indent: 40px;
-    flex: 0 1 240px;
+    flex: 0 1 80px;
     text-align: justify;
     font-size: 1.5em;
     color: rgb(0, 0, 0);
-    margin-right: 50px;
+    margin: 0 8vw;
     }
     
     div#media {
@@ -152,7 +152,7 @@ a:hover::after{
     div#media iframe {
         display: flex;
         margin: auto;
-        max-width: 560px;
+        max-width: 800px;
         margin-bottom: 100px;
     }
 
@@ -178,7 +178,7 @@ a:hover::after{
     }
 
     section#creditos {
-        background-color: #d8d8d8;
+        background-color: #ffffff;
         padding-top: 5vh;
         padding-bottom: 10vh;
         margin: auto;
@@ -195,7 +195,7 @@ a:hover::after{
         display: block;
         font-size: 3em;
         text-decoration: underline;
-        color: #FF9C00;
+        color: #193559;
 
         padding-bottom: 5vh;
         text-align: center;
@@ -260,7 +260,7 @@ a:hover::after{
     }
 
     footer {
-        background-color: #FF9C00;
+        background-color: #193559 ;
         color: white;
         text-align: center;
         margin: auto;
@@ -303,7 +303,7 @@ a:hover::after{
     section#sinopse > p{
     padding-top: 30px; 
     text-align: center;
-    margin: 0 5vw;
+    margin: auto;
     font-size: 1em;
     }
     section#sinopse {
@@ -330,17 +330,20 @@ a:hover::after{
         display: flex;
         margin: auto;
     }
+    
 
 
     div#text p{
     flex: 0 1 80px;
     padding-top: 30px; 
-    text-align: center;
     font-size: 1.2em;
     color: rgb(0, 0, 0);
-    margin: auto;
-    text-indent: 0px;
-    padding-bottom: 10px;
+    margin: 0 auto !important; /* força centralização horizontal */
+    text-align: justify;
+    text-indent: 0 !important; /* remove indentação */
+    width: 100%;
+    max-width: 100vw;
+    
     }
 
     div#text {
@@ -404,6 +407,10 @@ a:hover::after{
     div#redes > p {
         font-size: 1em;
     }
+
+    #creditos > p {
+        font-size: 0.5em;
+    }
     
 }
 
@@ -436,12 +443,14 @@ a:hover::after{
         width: 100%;
         margin: auto;
     }
+    #creditos > p {
+        font-size: 0.5em;
+    }
 }
     </style>
 </head>
 <body>
     <header>
-        <img src="imagens/Logo Universo Branco.png" alt="">
         <nav>
             <a href="#" onclick="scrollToSection1()">Sinopse</a>
             <a href="#" onclick="scrollToSection2()">Sobre</a>
@@ -480,6 +489,36 @@ a:hover::after{
             <img src="imagens/Planolandia/cazum8_elipse.png" alt="">
             <figcaption><strong>André, A Elipse</strong></figcaption>
             <figcaption>Interpretado por Cazum8</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/gustavo.png" alt="">
+            <figcaption><strong>Gustavo Pentoni</strong></figcaption>
+            <figcaption>NPC</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/João.png" alt="">
+            <figcaption><strong>João Bom</strong></figcaption>
+            <figcaption>NPC</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/ze.png" alt="">
+            <figcaption><strong>Zé da Hipotenusa</strong></figcaption>
+            <figcaption>NPC</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/Quadrucius_.png" alt="">
+            <figcaption><strong>Quadrucius</strong></figcaption>
+            <figcaption>NPC</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/Ana_Materia.png" alt="">
+            <figcaption><strong>Ana Matéria</strong></figcaption>
+            <figcaption>NPC</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Planolandia/Londrino-Timoteo.png" alt="">
+            <figcaption><strong>Leondrino Timóteo</strong></figcaption>
+            <figcaption>NPC</figcaption>
         </figure>
         </div>
         <h2 style="padding-top: 5vh;">Sistema usado</h2>

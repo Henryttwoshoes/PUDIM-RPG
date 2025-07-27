@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Story RPG</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+:root {
+    --cor01: #ffc50c;
+    --cor02: #bd930b;
+}   
+
+        body {
+            font-family: 'Poppins';
+            background: black url('imagens/fundos/fundo\ caslte\ story.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+            background-color: var(--cor01);
+            color: black;
+            padding: 0 10px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            align-self: auto;
+        }
+        header > img {
+        flex: 0 0 300px;
+        max-width: 25%;
+        }
+
+        header > nav {
+        margin: 0;
+        justify-content: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        }
+
+        header > nav > a {
+        background-color: var(--cor01);
+        color: black;
+        padding: 10px;
+        margin: 0 5px;
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.116);
+        margin-bottom: 2px;
+        font-size: 1.5em;
+        position: relative;
+    }
+
+    header > nav > a::after{
+    content: '';
+    background-color: black;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 100ms;
+}
+
+a:hover::after{
+    height: 5px;
+    width: 100%;
+}
+
+    main img#desktop {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+    main img#celular {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+
+
+    section#sinopse {
+    background-color: #eeb80679;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto 20vw;
+    }
+
+    section#sinopse:hover{
+        background-color: var(--cor01);
+        transition-duration: 0.5s;
+    }
+    section#sinopse:not(:hover){
+        background-color: #eeb80679;
+        transition-duration: 0.5s;
+    }
+
+    section#sinopse p{
+    padding-top: 5vh; 
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 2em;
+    }
+    
+    section#sinopse h2{
+    color: black;
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 3em;
+    text-decoration: underline;
+    }
+
+    section#sobre {
+    background-color: var(--cor01);
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    }
+
+    section#sobre > h2 {
+        color: black;
+        font-size: 3em;
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 2vw;
+    }
+
+    div#text p{
+    text-indent: 40px;
+    flex: 0 1 240px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+    margin: 0 5vw;
+    margin-bottom: 2vh;
+    }
+    
+    div#media {
+        flex: 0 0 360px;
+        margin: auto;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 560px;
+        margin-bottom: 100px;
+    }
+
+    div.paralelo{
+        display: flex;
+    }
+    div#text {
+        flex-direction: column;
+    }
+    div#media{
+        flex: column nowrap;
+    }
+
+    section#elenco {
+
+        background-color: var(--cor01);
+
+
+
+        padding: 10vh 3vw;
+
+        margin: auto 20vw;
+    }
+
+    section#creditos {
+        background-color: #ffc50c;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        margin: auto;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    div#figuras{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #elenco > h2, section#créditos > h2{
+        display: block;
+        font-size: 3em;
+        text-decoration: underline;
+        color: black;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        
+        max-width: 300px;
+        max-height: 400px;
+    }
+    figure {
+        margin: auto auto;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    section#creditos > h2{
+        
+        text-align: center;
+        font-size: 3em;
+    }
+    section#creditos > h3{
+        padding: 1vh 0;
+        font-size: 2em;
+        text-align: center;
+    }
+section#creditos > h4{
+        padding: 1vh 0;
+        font-size: 1.8em;
+        text-align: center;
+    }   
+
+    section#creditos > p {
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    section#creditos > img{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 10%;
+    }
+
+    div#redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+    }
+    div#redes > figure > a > img{
+        width: 60px;
+        max-width: 100%;
+    }
+
+    div#redes > figure {
+        flex: 0 1 100px;
+        margin: 0;
+        align-items: center;
+
+    }
+
+    footer {
+        background-color: #FF9C00;
+        color: white;
+        text-align: center;
+        margin: auto;
+        display: block;
+        font-size: 1.3em;
+    }
+
+    @media (max-width: 1200px) {
+        
+    header {
+        padding: 0 2vw; /* padding menor e proporcional */
+        align-items: flex-end;
+    }
+    header > img {
+        flex: 1 1 200px; /* logo menor e flexível */
+        max-width: 80vw;
+        min-width: 80px;
+    }        
+    header > nav {
+        justify-content: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+        align-self: flex-end;
+        }
+    
+    main img#celular {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 100vh; /* ajuste este valor conforme desejar */
+        margin: 0 auto;
+        object-fit: contain; /* garante que a imagem não distorça */
+        border: 1.5px solid black
+    }
+    main img#desktop {
+        display: none;
+        width: 0vw;
+    }
+    section#sinopse > p{
+    padding-top: 30px; 
+    text-align: center;
+    margin: 0 5vw;
+    font-size: 1em;
+    }
+    section#sinopse {
+    background-color: #dfdfdf;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto 5vw;
+    }
+    section#sobre > h2 {
+        font-size: 1.6em;
+        margin: auto;
+        display: block;
+    }
+
+    div#container {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+    div#media {
+        flex: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+
+    div#text p{
+    flex: 0 1 80px;
+    padding-top: 30px; 
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    text-indent: 0px;
+    padding-bottom: 10px;
+    }
+
+    div#text {
+        flex-direction: column;
+    }
+
+    div#media {
+        flex: 0 0 230px;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section#elenco {
+        border: 1px solid black;
+
+        background-color: #ffffff;
+
+        padding: 10vh 3vw;
+
+        margin: auto 5vw;
+    }
+    div#figuras{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #elenco > h2{
+        display: block;
+        font-size: 2em;
+        text-decoration: underline;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        margin: auto    ;  
+        max-width: 100px;
+        max-height: 200px;
+    }
+    figure {
+        margin: auto;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1em;
+    }
+    div#redes {
+        flex-direction: column;
+
+    }
+    div#redes > p {
+        font-size: 1em;
+    }
+    
+}
+
+    @media (min-width: 900px) and (max-width:1200px){
+            main img#desktop {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+    main img#celular {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    margin: 0 auto;
+} 
+    }
+
+    @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header > nav {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/Castle Story/logotipo final.png" alt="">
+        <nav>
+            <a href="#" onclick="scrollToSection1()">Sinopse</a>
+            <a href="#" onclick="scrollToSection2()">Sobre</a>
+            <a href="#" onclick="scrollToSection3()">Elenco</a>
+        </nav>
+    </header>
+    <main>
+        <img src="imagens/André e o mundo branco editado.png" alt="" id="desktop">
+        <img src="imagens/Mundo Branco banner celular.png" alt="" id="celular">
+    </main>
+    <section id="sinopse">
+        <h2>SINOPSE</h2>
+        <p>Em um universo coberto por branco e outros tipos de matéria monocromáticas, André, um viajante do multiverso, adentra uma parte desse cenário bizarro. Ele se encontra em uma porção de terra colonizada por pequenas criaturas trabalhadoras e de chapéu vermelho, <strong>gnomos</strong>. Esse mundo guarda muitos mistérios, mas será que André irá conseguir desvendá-los e ajudar seus habitantes? Só o tempo dirá. <br>
+        <p>Muitos são os mistérios escondidos no Universo Branco, mas algumas respostas são muito mais profundas e complexas do que uma simples ambição por poder.</p></p>
+    </section>
+    <section id="sobre">
+        <h2>SOBRE/ASSISTIR</h2>
+        <div id="container">
+        <div id="text">
+        <p>"<strong>André e o Universo Branco</strong>" foi uma one-shot - <i>uma história de RPG com duração de uma sessão</i> - transmitida no canal da Twitch e do Youtube do André no dia <strong>17 de Janeiro de 2025</strong>. O episódio foi a primeira história de RPG oficial do Pudimverso, inaugurando um novo tipo de conteúdo nas streams do Cazum8.</p>
+        <p>A gravação do episódio está disponível no canal do Cazum Infinito, e você pode acessá-la diretamente pelo anexo de vídeo à direita deste texto.</p>
+        </div>
+        <div id="figuras">
+        <figure>
+        <div id="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0pFxXyI3xxE?si=TGfaPnPxRp9wXLMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </figure>
+        <figure>
+        <div id="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0pFxXyI3xxE?si=TGfaPnPxRp9wXLMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </figure>
+        <figure>
+        <div id="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0pFxXyI3xxE?si=TGfaPnPxRp9wXLMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </figure>
+        </div>
+    </div>
+    </section>
+    <section id="elenco">
+        <h2>ELENCO</h2>
+        <div id="figuras">
+        <figure>
+            <img src="imagens/Castle Story/foto talk 1.png" alt="">
+            <figcaption><strong>Henryttwoshoes</strong></figcaption>
+            <figcaption>Narrador</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Castle Story/Bloo.png" alt="">
+            <figcaption><strong>Bloo, o Piqueiro</strong></figcaption>
+            <figcaption>Interpretado por SirMoD</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Castle Story/Kizoh.png" alt="">
+            <figcaption><strong>Kizoh, o Arqueiro</strong></figcaption>
+            <figcaption>Interpretado por DsMota</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Castle Story/Sambal.png" alt="">
+            <figcaption><strong>Sambal, o Guerreiro</strong></figcaption>
+            <figcaption>Interpretado por Cazum8</figcaption>
+        </figure>
+        <figure>
+            <img src="imagens/Castle Story/Pesto.png" alt="">
+            <figcaption><strong>Pesto, o Artífice</strong></figcaption>
+            <figcaption>Interpretado por astvitu</figcaption>
+        </figure>
+        </div>
+        <h2 style="padding-top: 5vh;">Sistema usado</h2>
+        <div id="sistema">
+            <figure>
+            <img src="imagens/Castle Story/Symbaroum_cover.webp" alt="">
+            <figcaption><strong>Symbaroum</strong></figcaption>
+            <figcaption style="margin: auto 8vw;">Regras usadas como base, ajustes de mecânica foram feitos para se adequar melhor à história.</figcaption>
+        </figure>
+        </div>
+        
+    </section>
+    <section id="creditos">
+            <h2>Créditos</h2>
+            <h3>Criação</h3>
+            <p>Cazum8</p>
+            <p>Henryttwoshoes</p>
+            <h3>Narração e Planejamento</h3>
+            <p>Henryttwoshoes</p>
+            <h3>Transmissão ao vivo</h3>
+            <p>Cazum8</p>
+            <h3>Arte de Personagens</h3>
+            <p>astvitu</p>
+            <p>nerdvsomundo</p>
+            <h3>Arte de cenários</h3>
+            <p>nerdvsomundo</p>
+            <p>Henryttwoshoes</p>
+            <h3>Arte adicional</h3>
+            <p>nerdvsomundo</p>
+            <h3>Trilha sonora</h3>
+            <h4>Músicas originais</h4>
+            <p>TheDuckyGamer</p>
+            <h4>Trilha sonora original de Castle Story</h4>
+            <p>Vibe Avenue</p>
+            <p>Mattias Häggström Gerdt</p>
+            <p>Jose Whelchel</p>
+            <h4>Músicas adicionais</h3>
+            <p>Epidemic Sound</p>
+            <h3>Elenco principal</h3>
+            <p>Cazum8 - como Sambal</p>
+            <p>astvitu - como Pesto</p>
+            <p>SirMoD - como Bloo</p>
+            <p>DsMota - como Kizoh</p>
+            <h3>Participação especial</h3>
+            <p>nerdvsomundo - como Kiwi</p>
+            <h3>Sistema de regras</h3>
+            <p>Symbaroum</p>
+            <h3>Castle Story</h3>
+            <p>Todos os direitos reservados a Sauropod Studio</p>
+            <br>
+            <p>Este site e seus conteúdos relacionados fazem parte do conglomerado de produção digital do Pudimverso.</p>
+
+            <h3>Links para mais novidades</h3>
+            <p><a href="https://discord.gg/yK25rv2E56" target="_blank">Discord do Pudimverso</a></p>
+            <img src="imagens/Universo Branco/discord.png" alt="">
+            <h3>Redes do Cazum8</h3>
+            <div id="redes">        
+            <figure>
+                <a href="https://www.youtube.com/@cazum8" target="_blank">
+                    <img src="imagens/Universo Branco/youtube logo.png" alt="">
+                    <figcaption>YouTube</figcaption>
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="https://www.twitch.tv/cazum8videos" target="_blank">
+                    <img src="imagens/Universo Branco/twitch--v2.png" alt="">
+                    <figcaption>Twitch</figcaption>
+                </a>
+            </figure>
+            
+            <figure>
+                <a href="https://www.instagram.com/cazum8oficial/   " target="_blank">
+                    <img src="imagens/Universo Branco/Instagram_icon.png.webp" alt="">
+                    <figcaption>Instagram</figcaption>
+                </a>
+            </figure>
+
+            <figure>
+                <a href="https://x.com/Cazum8Videos" target="_blank">
+                    <img src="imagens/Universo Branco/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" alt="">
+                    <figcaption>X</figcaption>
+                </a>
+            </figure>
+
+            </div>
+        </section>
+        <footer><div></div>Site desenvolvido por Henryttwoshoes</footer>
+        <script src="Programação/UniversoBranco.js"></script>
+</body>
+</html>

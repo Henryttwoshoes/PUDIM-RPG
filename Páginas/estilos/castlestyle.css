@@ -68,3 +68,21 @@ hr {
     }
 }
 }
+
+#lista {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 30px;
+    
+    & p, h3, h2, h4{
+        padding: 0 40px;
+    }
+}
+
+#credfim {
+    margin-top: 30px;
+}

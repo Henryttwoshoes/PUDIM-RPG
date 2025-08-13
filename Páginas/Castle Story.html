@@ -284,12 +284,19 @@ section#creditos > h4{
 
     @media (max-width: 1200px) {
         
+    
+
+    #lista {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
     header {
         padding: 0 2vw; /* padding menor e proporcional */
         align-items: flex-end;
     }
     header > img {
-        flex: 1 1 200px; /* logo menor e flexível */
+        flex: 1 1 100px; /* logo menor e flexível */
         max-width: 80vw;
         min-width: 80px;
     }        
@@ -301,9 +308,13 @@ section#creditos > h4{
         align-self: flex-end;
         }
     
+    #container iframe {
+        max-width: 90%;
+    }
+
     main img#celular {
         display: block;
-        width: 100%;
+        width: 99%;
         height: auto;
         max-height: 100vh; /* ajuste este valor conforme desejar */
         margin: 0 auto;
@@ -334,7 +345,7 @@ section#creditos > h4{
 
     div#container {
         flex-direction: column;
-        padding: 0 5vw;
+        padding: 0;
     }
     div#media {
         flex: none;

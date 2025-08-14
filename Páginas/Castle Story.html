@@ -30,7 +30,7 @@
             align-self: auto;
         }
         header > img {
-        flex: 0 0 100px;
+        flex: 0 0 50px;
         margin: auto;
         max-width: 15%;
         padding: 30px 0;
@@ -42,7 +42,7 @@
         justify-content: flex-end;
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-end;
+        align-items: center;
         }
 
         header > nav > a {
@@ -293,19 +293,19 @@ section#creditos > h4{
 }
     header {
         padding: 0 2vw; /* padding menor e proporcional */
-        align-items: flex-end;
+        align-items: center;
     }
     header > img {
-        flex: 1 1 100px; /* logo menor e flexível */
-        max-width: 80vw;
-        min-width: 80px;
+        flex: 1 1 50px; /* logo menor e flexível */
+        max-width: 40vw;
+        min-width: 20px;
     }        
     header > nav {
         justify-content: flex-end;
         display: flex;
         flex-flow: row wrap;
         margin: 0;
-        align-self: flex-end;
+        align-self: center;
         }
     
     #container iframe {
@@ -349,7 +349,7 @@ section#creditos > h4{
     }
     div#media {
         flex: none;
-        width: 100%;
+        width: 50vw;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -380,8 +380,10 @@ section#creditos > h4{
     div#media iframe {
         display: flex;
         margin: auto;
-        max-width: 100%;
+        max-width: 80vw;
+        max-height: 50vh;
         text-align: center;
+        padding-bottom: 20px;
     }
 
     section#elenco {
@@ -410,8 +412,8 @@ section#creditos > h4{
 
     figure > img{
         margin: auto    ;  
-        max-width: 100px;
-        max-height: 200px;
+        max-width: 300px;
+        max-height: 400px;
     }
     figure {
         margin: auto;
@@ -432,7 +434,7 @@ section#creditos > h4{
     
 }
 
-    @media (min-width: 900px) and (max-width:1200px){
+    @media (min-width: 500px) and (max-width:900px){
             main img#desktop {
     display: block;
     width: 100%;

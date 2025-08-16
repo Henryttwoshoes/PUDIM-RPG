@@ -1,3 +1,7 @@
+// Variável de controle para quando o episódio está com dia marcado ou não.
+const marcado = false
+
+
 const Days = document.getElementById('days')
 const Hours = document.getElementById('hours')
 const Minutes = document.getElementById('minutes')
@@ -8,7 +12,7 @@ const targetDate = new Date('August 15 2025 18:00:00').getTime() /* cria um obje
 
     "new" cria um novo objeto, nesse caso da classe "Date"
 */
-
+if (marcado){
 function timer (){
     const currentDate = new Date().getTime()/* pega o timestamp atual em milissegundos */
     const distance = targetDate - currentDate
@@ -33,3 +37,10 @@ function timer (){
 }
 }
 setInterval(timer, 100)
+} else {
+    mensagem.innerHTML = "A DATA DO PRÓXIMO EPISÓDIO SERÁ DIVULGADA EM BREVE."
+    Days.innerHTML = "ØØ"
+    Hours.innerHTML = "ØØ"
+    Minutes.innerHTML = "ØØ"
+    Seconds.innerHTML = "ØØ"
+}

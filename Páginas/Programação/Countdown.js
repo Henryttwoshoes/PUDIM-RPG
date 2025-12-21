@@ -38,9 +38,9 @@ function timer (){
 }
 setInterval(timer, 100)
 } else {
-    mensagem.innerHTML = "A DATA DO PRÓXIMO EPISÓDIO SERÁ DIVULGADA EM BREVE."
-    Days.innerHTML = "ØØ"
-    Hours.innerHTML = "ØØ"
-    Minutes.innerHTML = "ØØ"
-    Seconds.innerHTML = "ØØ"
+    mensagem.innerHTML = "A BUSCA PELO CRISTAL PERDIDO RETORNA EM JANEIRO DE 2026!"
+    Days.innerHTML = "--"
+    Hours.innerHTML = "--"
+    Minutes.innerHTML = "--"
+    Seconds.innerHTML = "--"
 }

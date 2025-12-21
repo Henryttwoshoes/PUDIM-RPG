@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+
+
+
+
+
+:root {
+    --cor01: #ffc50c;
+    --cor02: #bd930b;
+}   
+
+        body {
+            font-family: 'Poppins';
+            background: black url('../../imagens/fundos/fundo\ caslte\ story.png') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+            background-color: var(--cor01);
+            color: black;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0 10px;    
+            align-items: center;
+        justify-items: center;
+        justify-content: center;
+
+            /* display: flex;
+            flex-flow: column wrap; */
+            
+        }
+        section {
+        outline: 2px solid black;
+    }
+        header > img {
+
+    
+        max-width: 15%;
+        padding: 30px 0;
+        padding-left: 20px;
+        }
+
+        article#botoes > nav {
+
+        display: grid;
+        grid-template-columns: 94px 94px 94px;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        
+        /* display: flex;
+        flex-flow: row wrap; */
+        }
+
+        article#botoes > nav > a {
+        background-color: var(--cor01);
+        color: black;
+        padding: 10px;
+        margin: 0 5px;
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.116);
+        margin-bottom: 2px;
+        font-size: 1.5em;
+        position: relative;
+    }
+
+    article#botoes > nav > a::after{
+    content: '';
+    background-color: black;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 100ms;
+}
+
+article#botoes > nav > a:hover::after{
+    height: 5px;
+    width: 100%;
+
+}
+    main img#desktop {
+    display: block;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+    main img#celular {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+
+
+    section#sinopse {
+    background-color: #eeb80679;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto 20%;
+    }
+
+    section#sinopse:hover{
+        background-color: var(--cor01);
+        transition-duration: 0.5s;
+    }
+    section#sinopse:not(:hover){
+        background-color: #eeb80679;
+        transition-duration: 0.5s;
+    }
+
+    section#sinopse p{
+    padding-top: 5vh; 
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 2em;
+    }
+    
+    section#sinopse h2{
+    color: black;
+    text-align: center;
+    margin: 0 10vw;
+    font-size: 3em;
+    text-decoration: underline;
+    }
+
+    section#sobre {
+    background-color: var(--cor01);
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    }
+
+    section#sobre > h2 {
+        color: black;
+        font-size: 3em;
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 2vw;
+    }
+
+    div#text p{
+    text-indent: 40px;
+    flex: 0 1 240px;
+    text-align: justify;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+    margin: 0 5vw;
+    margin-bottom: 2vh;
+    }
+    
+    div#media {
+        flex: 0 0 360px;
+        margin: auto;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 560px;
+        margin-bottom: 25px;
+    }
+
+    div.paralelo{
+        display: flex;
+    }
+    div#text {
+        flex-direction: column;
+    }
+    div#media{
+        flex: column nowrap;
+    }
+
+    section#elenco {
+
+        background-color: var(--cor01);
+
+
+
+        padding: 10vh 3vw;
+
+        margin: auto 20vw;
+    }
+
+    section#creditos {
+        background-color: #ffc50c;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        margin: auto;
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    
+    div#figuras{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #elenco > h2, section#créditos > h2{
+        display: block;
+        font-size: 3em;
+        text-decoration: underline;
+        color: black;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        
+        max-width: 300px;
+        max-height: 400px;
+    }
+    figure {
+        margin: auto auto;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    section#creditos > h2{
+        
+        text-align: center;
+        font-size: 3em;
+    }
+    section#creditos > h3{
+        padding: 1vh 0;
+        font-size: 1.4em;
+        text-align: center;
+    }
+section#creditos > h4{
+        padding: 1vh 0;
+        font-size: 1.2em;
+        text-align: center;
+    }   
+
+    section#creditos > p {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    section#creditos > img{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 10%;
+    }
+
+    div#redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+    }
+    div#redes > figure > a > img{
+        width: 60px;
+        max-width: 100%;
+    }
+
+    div#redes > figure {
+        flex: 0 1 100px;
+        margin: 0;
+        align-items: center;
+
+    }
+
+    footer {
+        background-color: #FF9C00;
+        color: white;
+        text-align: center;
+        margin: auto;
+        display: block;
+        font-size: 1.3em;
+    }
+
+    @media (max-width: 1200px) {
+        
+    
+
+    #lista {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+    header {
+        padding: 0 2vw; /* padding menor e proporcional */
+        align-items: center;
+    }
+    header > img {
+        flex: 1 1 50px; /* logo menor e flexível */
+        max-width: 40vw;
+        min-width: 20px;
+    }        
+    header > nav {
+        justify-content: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+        align-self: center;
+        }
+    
+    #container iframe {
+        max-width: 90%;
+    }
+
+    main img#celular {
+        display: block;
+        width: 60%;
+        height: auto;
+        max-height: 100vh; /* ajuste este valor conforme desejar */
+        margin: 0 auto;
+        object-fit: contain; /* garante que a imagem não distorça */
+        border: 1.5px solid black
+    }
+    main img#desktop {
+        display: none;
+        width: 0vw;
+    }
+    section#sinopse > p{
+    padding-top: 30px; 
+    text-align: center;
+    margin: 0 5vw;
+    font-size: 1em;
+    }
+    section#sinopse {
+    background-color: #dfdfdf;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto 5vw;
+    }
+    section#sobre > h2 {
+        font-size: 1.6em;
+        margin: auto;
+        display: block;
+    }
+
+    div#container {
+        flex-direction: column;
+        padding: 0;
+    }
+    div#media {
+        flex: none;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+
+    div#text p{
+    flex: 0 1 80px;
+    padding-top: 30px; 
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    text-indent: 0px;
+    padding-bottom: 10px;
+    }
+
+    div#text {
+        flex-direction: column;
+    }
+
+    div#media {
+        flex: 0 0 230px;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+    div#media iframe {
+        display: flex;
+        margin: auto;
+        max-width: 80vw;
+        max-height: 50vh;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    section#elenco {
+        border: 1px solid black;
+
+        background-color: #ffffff;
+
+        padding: 10vh 3vw;
+
+        margin: auto 5vw;
+    }
+    div#figuras{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #elenco > h2{
+        display: block;
+        font-size: 2em;
+        text-decoration: underline;
+
+        padding-bottom: 5vh;
+        text-align: center;
+        margin: auto;
+    }
+
+    figure > img{
+        margin: auto    ;  
+        max-width: 300px;
+        max-height: 400px;
+    }
+    figure {
+        margin: auto;
+        text-align: center;
+
+    }
+    figure > figcaption {
+        text-align: center;
+        font-size: 1em;
+    }
+    div#redes {
+        flex-direction: column;
+
+    }
+    div#redes > p {
+        font-size: 1em;
+    }
+    
+}
+
+    @media (min-width: 500px) and (max-width:900px){
+            main img#desktop {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+    main img#celular {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    margin: 0 auto;
+} 
+    }
+
+    @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header > nav {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+}

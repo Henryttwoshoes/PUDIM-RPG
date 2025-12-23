@@ -44,3 +44,16 @@ setInterval(timer, 100)
     Minutes.innerHTML = "ØØ"
     Seconds.innerHTML = "ØØ"
 }
+
+/* 
+
+PROGRAMAÇÃO DO MENU WRAPPER DE ABRIR E FECHAR O COUNTDOWN
+
+*/
+
+const btn = document.querySelector('.toggle');
+const menu = btn.closest('.hero');
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('open'); // alterna aberto / fechado
+});

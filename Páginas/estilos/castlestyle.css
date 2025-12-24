@@ -16,13 +16,28 @@
 }
 
 
-
-
-
 /* WRAPPER */
 
-#headctd {
-    & .toggle {
+.hidden {
+    display: none !important;
+}
+
+.menu.open .timebox {
+    display: flex;
+}
+
+.timebox {
+    display: none;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu.open .timebox {
+    display: flex;
+}
+
+.toggle {
         display: block;
         outline: 2px solid black;
         padding: 20px 25px;
@@ -32,17 +47,7 @@
         border-radius: 100px;
         background-color: var(--cor01);
         cursor: pointer;
-    }
 }
-
-.hidden {
-    display: none;
-}
-
-.hero {
-    display: flex;
-}
-
 
 /*--------------------*/
 
@@ -86,7 +91,7 @@ div#headctd > h1{
 }
 
 .timebox {
-    display: flex;
+    display: none;
     gap: 90px;
 }
 
@@ -108,7 +113,7 @@ div#headctd > h1{
 
 
 .timebox {
-    display: flex;
+    display: none;
     gap: 30px;
 }
 

@@ -52,8 +52,17 @@ PROGRAMAÇÃO DO MENU WRAPPER DE ABRIR E FECHAR O COUNTDOWN
 */
 
 const btn = document.querySelector('.toggle');
-const menu = btn.closest('.hero');
 
-btn.addEventListener('click', () => {
-    menu.classList.toggle('open'); // alterna aberto / fechado
-});
+    if (btn) {
+        const menu = btn.closest('.menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+
+            if (menu.classList.contains('open')) {
+                btn.textContent = "Esconder Contagem";
+            } else {
+                btn.textContent = "Mostrar Contagem";
+            }
+        });
+    }

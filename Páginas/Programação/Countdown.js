@@ -58,11 +58,12 @@ const btn = document.querySelector('.toggle');
 
         btn.addEventListener('click', () => {
             menu.classList.toggle('open');
+            mensagem.classList.toggle('open');
 
             if (menu.classList.contains('open')) {
-                btn.textContent = "Esconder Contagem";
+                btn.innerHTML = "Esconder contagem";
             } else {
-                btn.textContent = "Mostrar Contagem";
+                btn.innerHTML = "Mostrar Contagem";
             }
         });
     }

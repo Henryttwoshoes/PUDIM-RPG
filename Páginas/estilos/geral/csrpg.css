@@ -196,6 +196,108 @@ article#botoes > nav > a:hover::after{
         margin: auto 20vw;
     }
 
+
+
+    section#elenco-equipe {
+        border: 1px solid black;
+
+        background-color: var(--cor01);
+        padding: 30px 1vw;
+        margin: auto 20vw;
+
+        
+@media (max-width:1200px){
+            margin: auto 5vw;
+
+        }
+        
+        
+
+        & figure {
+        margin: auto auto;
+        text-align: center;
+
+        }
+
+        & figure > div#fotoart{
+            width: 500px;
+            height: 500px;
+            background-color: purple;
+            color: purple;
+            margin: auto;
+
+            @media (max-width:1200px){
+            font-size: 2.4em;
+
+            width: 300px;
+            height: 300px;
+        }
+
+        }
+
+        /* & figure > img{
+        max-width: 500px;
+        max-height: 500px; }
+        */
+
+
+        & figure > figcaption {
+        text-align: center;
+        font-size: 1.3em;
+
+        }
+
+        & h2{
+        display: block;
+        font-size: 4em;
+        text-decoration: underline;
+
+        padding-bottom: 2%;
+        text-align: center;
+        margin: auto;
+
+        @media (max-width:1500px){
+            font-size: 2.4em;
+
+
+        }
+    }
+
+    & .nome {
+        font-size: 2em;
+
+        @media (max-width:1200px){
+            font-size: 1.8em;
+
+
+        }
+    }
+
+    & .funcao {
+        font-size: 1.5em;
+        font-weight: 400;
+
+        @media (max-width:1200px){
+            font-size: 1.2em;
+
+
+        }
+    }
+
+    & .bio {
+        font-size: 1.4em;
+        font-weight: 250;
+        margin: auto 10%;
+
+        @media (max-width:1200px){
+            font-size: 1.3em;
+            font-weight: 300;
+
+
+        }
+    }
+    }
+
     section#creditos {
         background-color: #ffc50c;
         padding-top: 5vh;

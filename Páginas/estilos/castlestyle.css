@@ -9,10 +9,16 @@
 }
 
 
-.avatars, .hero, .anim, iframe {
+.avatars, .hero, .anim, iframe{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
+}
+
+figcaption{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
 }
 
 

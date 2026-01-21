@@ -219,10 +219,12 @@ article#botoes > nav > a:hover::after{
 
         }
 
-        & figure > div#fotoart{
+        & figure > .fotoart{
             width: 500px;
             height: 500px;
-            background-color: purple;
+            max-width: 500px;
+            max-height: 500px;
+            /*background-color: purple;*/
             color: purple;
             margin: auto;
 
@@ -286,15 +288,32 @@ article#botoes > nav > a:hover::after{
 
     & .bio {
         font-size: 1.4em;
-        font-weight: 250;
+        font-weight: 380;
         margin: auto 10%;
 
         @media (max-width:1200px){
             font-size: 1.3em;
-            font-weight: 300;
+            font-weight: 400;
 
 
         }
+    }
+    & .redes {
+        font-size: 1.4em;
+        font-weight: 380;
+        margin: auto 10%;
+
+        @media (max-width:1200px){
+            font-size: 1.3em;
+            font-weight: 400;
+
+
+        }
+    }
+
+    & figure > figcaption.rede > p > img {
+        width: 32px;
+        height: 32px;
     }
     }
 

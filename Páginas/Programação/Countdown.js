@@ -1,5 +1,5 @@
 // Variável de controle para quando o episódio está com dia marcado ou não.
-const marcado = false
+const marcado = true
 
 
 const Days = document.getElementById('days')
@@ -8,7 +8,7 @@ const Minutes = document.getElementById('minutes')
 const Seconds = document.getElementById('seconds')
 const mensagem = document.getElementById('mensagem')
 
-const targetDate = new Date('August 15 2025 18:00:00').getTime() /* cria um objeto de data para o dia 15 de Agosto
+const targetDate = new Date('Februray 22 2026 16:00:00').getTime() /* cria um objeto de data para o dia 15 de Agosto
 
     "new" cria um novo objeto, nesse caso da classe "Date"
 */

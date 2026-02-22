@@ -8,7 +8,7 @@ const Minutes = document.getElementById('minutes')
 const Seconds = document.getElementById('seconds')
 const mensagem = document.getElementById('mensagem')
 
-const targetDate = new Date('Februray 22 2026 16:00:00').getTime() /* cria um objeto de data para o dia 15 de Agosto
+const targetDate = new Date('Februray 22 2026 16:30:00').getTime() /* cria um objeto de data para o dia 15 de Agosto
 
     "new" cria um novo objeto, nesse caso da classe "Date"
 */
@@ -33,7 +33,7 @@ function timer (){
         Hours.innerHTML = "0"
         Minutes.innerHTML = "0"
         Seconds.innerHTML = "0"
-        mensagem.innerHTML = "O EPISÓDIO VAI COMEÇAR!"
+        mensagem.innerHTML = "O EPISÓDIO ESTÁ COMEÇANDO NO YOUTUBE DO CAZUM8!"
 }
 }
 setInterval(timer, 100)

@@ -1,5 +1,5 @@
 // Variável de controle para quando o episódio está com dia marcado ou não.
-const marcado = true
+const marcado = false
 
 
 const Days = document.getElementById('days')
@@ -38,9 +38,9 @@ function timer (){
 }
 setInterval(timer, 100)
 } else {
-    mensagem.innerHTML = "A BUSCA PELO CRISTAL PERDIDO RETORNA EM JANEIRO DE 2026!"
-    Days.innerHTML = "--"
-    Hours.innerHTML = "--"
-    Minutes.innerHTML = "--"
-    Seconds.innerHTML = "--"
+    mensagem.innerHTML = "A BUSCA PELO CRISTAL PERDIDO RETORNARÁ EM BREVE!"
+    Days.innerHTML = "ØØ"
+    Hours.innerHTML = "ØØ"
+    Minutes.innerHTML = "ØØ"
+    Seconds.innerHTML = "ØØ"
 }

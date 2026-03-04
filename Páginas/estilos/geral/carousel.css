@@ -1,0 +1,60 @@
+#carousel-equipe {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.equipe-categoria {
+    text-align: center;
+}
+
+.equipe-categoria h3 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-track { 
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #00000050;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #000000;
+}
+
+.dot:hover {
+    background-color: #555;
+}

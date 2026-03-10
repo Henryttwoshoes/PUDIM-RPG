@@ -220,8 +220,8 @@ article#botoes > nav > a:hover::after{
         }
 
         & figure > .fotoart{
-            width: 500px;
-            height: 500px;
+            width: 300px;
+            height: 300px;
             max-width: 500px;
             max-height: 500px;
             /*background-color: purple;*/
@@ -251,7 +251,7 @@ article#botoes > nav > a:hover::after{
 
         & h2{
         display: block;
-        font-size: 4em;
+        font-size: 3rem;
         text-decoration: underline;
 
         padding-bottom: 2%;
